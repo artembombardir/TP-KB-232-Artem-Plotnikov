@@ -14,13 +14,17 @@ def divide(x, y):
         return "Помилка: Ділення на нуль неможливе!"
 
 def calculator():
-    print("Оберіть операцію:")
-    print("1. Додавання")
-    print("2. Віднімання")
-    print("3. Множення")
-    print("4. Ділення")
+    calculator = True
+    while calculator:
+        print("Оберіть операцію:")
+        print("1. Додавання")
+        print("2. Віднімання")
+        print("3. Множення")
+        print("4. Ділення")
     
     choice = input("Введіть номер операції (1/2/3/4): ")
+    if choice == 'q':
+        calculator = False
     num1 = float(input("Введіть перше число: "))
     num2 = float(input("Введіть друге число: "))
     

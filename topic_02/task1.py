@@ -1,10 +1,15 @@
-def find_roots():
+def ask_parameters():
     a = float(input("Введіть значення a: "))
     b = float(input("Введіть значення b: "))
     c = float(input("Введіть значення c: "))
-    
-    discriminant = b**2 - 4*a*c
-    print(f"Дискримінант: {discriminant}")
+    return a, b, c
+
+def find_discriminant(a, b, c):
+    discriminant = b**2 - 4 * a * c
+    return discriminant
+
+def find_roots(a, b, c):
+    discriminant = find_discriminant(a, b, c)
     
     if discriminant > 0:
         x1 = (-b + discriminant**0.5) / (2 * a)
@@ -16,4 +21,6 @@ def find_roots():
     else:
         print("Рівняння не має дійсних коренів.")
 
-find_roots()
+a, b, c = ask_parameters()
+
+find_roots(a, b, c)
