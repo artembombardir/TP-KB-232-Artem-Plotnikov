@@ -1,7 +1,6 @@
 import requests
 
 def get_exchange_rate(currency_code):
-    """Отримуємо курс валюти з API НБУ"""
     url = "https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json"
     try:
         response = requests.get(url)
