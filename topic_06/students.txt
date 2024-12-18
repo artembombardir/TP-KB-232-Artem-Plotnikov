@@ -1,0 +1,4 @@
+Artem,100
+Walter,100
+Skyler,95
+Jessy, 60
