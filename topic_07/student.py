@@ -4,19 +4,18 @@ class Student:
         self.age = age
 
     def __str__(self):
-        return f"Student(name={self.name}, age={self.age})"
+        return f"{self.name}, {self.age} years old"
 
-# Створення списку об'єктів Student
+# Список студентів
 students = [
-    Student("Anna", 22),
-    Student("Bohdan", 19),
-    Student("Iryna", 21),
-    Student("Oleksii", 20),
+    Student("Artem", 22),
+    Student("Andriy", 19),
+    Student("Alexandr", 21)
 ]
 
-# Сортування за віком (атрибут `age`)
+# Сортування студентів за віком
 sorted_students = sorted(students, key=lambda student: student.age)
 
-# Виведення відсортованого списку
+# Виведення відсортованих студентів
 for student in sorted_students:
     print(student)
