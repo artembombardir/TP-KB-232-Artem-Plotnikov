@@ -8,4 +8,7 @@ add folder topic_02
 # 2024-10-03
 add solution for topic2
 
+# 2024-12-21
+update zvit 
+
 # TP-KB-232-Artem-Plotnikov
