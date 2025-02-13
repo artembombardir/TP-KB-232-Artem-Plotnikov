@@ -1,5 +1,5 @@
 import pytest
-from student_directory_lab2 import add_new_student, delete_student, update_student, students
+from lab2 import add_new_student, delete_student, update_student, students
 
 def setup_function():
     global students
